@@ -1,0 +1,86 @@
+html {
+
+        /* Prevent font scaling in landscape */
+
+        -webkit-text-size-adjust: auto; /*Chrome, Safari, newer versions of Opera*/
+
+        -moz-text-size-adjust: auto; /*Firefox*/
+
+        -ms-text-size-adjust: auto;  /*Ie*/
+
+        -o-text-size-adjust: auto; /*old versions of Opera*/
+
+}
+
+.page-header {
+        background-color: #ff9400;
+        margin-right: 10px;
+        margin-left: 20px;
+        margin-top: 0;
+        padding: 20px 20px 20px 20px;
+        font-size: 4.0vh;
+}
+
+.author{
+        text-align: right;
+        font-size: 2vh;
+}
+
+body {
+        background: #dcdcdc;
+        margin-left: 30px;
+        line-height: 150%;
+        font-weight: 500;
+}
+
+body, p {
+        color: #000000;
+        font-family: "American Typewriter", sans-serif;
+        font-size: 2.5vh;
+}
+
+h1, h2, h3, h4 {
+        font-size: 3.1vh;
+        font-weight: 600;
+}
+
+h2 a{   
+        color: #f7604f; 
+        font-size: 2.5vh;
+        line-height: 100%;
+        font-weight: bolder;
+}
+
+h5 {
+        color: #00028b;
+        font-family: 'Lobster', cursive;
+        font-size: 75vh;
+        font-weight: bold;
+        text-decoration: underline;
+}
+
+a {
+        font-size: 2.7vh;
+        line-height: 200%;
+        text-decoration: underline;
+        font-weight: 600;
+
+}
+
+i {
+        font-size: 1.7vh;
+        line-height: 150%;
+}
+
+.row {
+        box-sizing: border-box;
+}
+
+.column {
+        float: left;
+        width: 50%;
+        padding: 20px 20px 20px 20px;
+}
+
+
+

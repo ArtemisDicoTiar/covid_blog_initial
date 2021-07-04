@@ -1,0 +1,76 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
+    <link href='//fonts.googleapis.com/css?family=Lobster&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="./covid/static/index.css">
+    <link rel="shortcut icon" href="favicon.ico">
+    <link rel="apple-touch-icon-precomposed" href="favicon.ico">
+    <title>COVID-19 Analysis</title>
+</head>
+<body>
+    <div class="page-header">
+        <b>* COVID - 19 Analysis</b><br/>
+        <div class="author">
+            <b>by "John Jongyoon Kim"</b>
+        </div>
+    </div>
+
+COVID-19 is getting serious these days.<br/>
+To help various people, the basic graph but also relationship graph that shows which parameter of the country affect to handling current situation. <br/>
+<i># This web is hosted by 'John Jongyoon Kim'.</i><br>
+<i>** COVID-19 data was crawled from government website.</i>
+<i>   The number of country for crawling was limited.</i><br/>
+<i>   So now the data is not crawled from government websidtes.</i>
+<i>   COVID-19 data are cloned from CSSE GIS github repesitory.</i><br/>
+<br/>
+<p>
+    <b>* Last Source Code Update: 2020-06-22</b><br/>
+    <b>$ Latest Update Item:</b><br/>
+    Now, Global Section provides 'Geographical Map' of the increase and decrease of Confirmed, Active and Reocvered Patient number based on yesterday. <br/>
+    
+    <b>$ Previous Updates: </b><br/>
+    5 days prediction for active patients in 'Gloabal' graph, all graphs in 'Contiental' and 'Country'.<br/>
+    The prediction was done by polynomial regression in Version 1.X but removed due to crash. <br/>
+    Now the prediction is using 'Autoregressive Integrated Moving Average model (ARIMA model)'. <br/>
+</p>
+<b>* Last DATA Update:</b>
+
+<iframe src="./covid/last_update.html" frameborder="0" width="400" height="40" marginwidth="0" marginheight="0" scrolling="no">Not Available</iframe>
+<br/>
+
+<h2><b># Graph Categories </b></h2>
+
+<a href="./covid/Global_View.html">
+    <h2>* Global Analysis</h2>
+</a>
+<a href="./covid/Continental_View.html">
+    <h2>* Continental & Country Analysis</h2>
+</a>
+<h2><u>* Relationship data</u></h2>
+<p>The graphs in this section are stored in 'Global Analysis' Section.</p>
+
+<br/>
+
+<h2><b>+ HOW to use GRAPH effectively and efficiently.</b></h2>
+++ By dragging some area of the graph, the area will be zoomed in.<br/>
+++ To zoom out, double click the graph.<br/>
+<br/>
+++ If you want to see some lines in the graph, you can choose the graph by clicking the labels on rightside.<br/>
+++ When the label is not bright and clear, the label is 'DE-selected'.<br/>
+++ When the label is bright and claer, the label is 'SELECTED'.<br/>
+<br/>
+++ When you touch the line or marker, you can see the specific data of the plot.<br/>
+<br/>
+
+<script type="text/javascript" src="//wcs.naver.net/wcslog.js"></script>
+<script type="text/javascript">
+if(!wcs_add) var wcs_add = {};
+wcs_add["wa"] = "272496b88e354a";
+if(window.wcs) {
+wcs_do();
+}
+</script>
+</body>
+</html>
